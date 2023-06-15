@@ -1,0 +1,11 @@
+Experiment 7: implement Matrix Multiplication algorithm using Map Reduce.
+Paste the folder in the PC
+
+open terminal using Ctrl + Alt + T
+
+cd to the current folder
+
+paste the command:
+python mapper.py
+
+All the Best For Your Vivas!!!!!

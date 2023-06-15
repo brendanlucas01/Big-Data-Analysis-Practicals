@@ -1,0 +1,15 @@
+Experiment 9: implement k-Means algorithm using any programming language.
+Paste the folder in the PC
+
+open terminal using Ctrl + Alt + T
+
+cd to the current folder
+
+paste the command:
+jupyter notebook
+
+open the K-Means Clustering.ipynb file in Jupyter Notebooks
+
+Run all cells
+
+All the Best For Your Vivas!!!!!

@@ -1,0 +1,13 @@
+Experiment 3:implement Word Count using Map Reduce.
+Paste the folder in the PC
+
+open terminal using Ctrl + Alt + T
+
+cd to the current folder
+
+paste the command:
+cat word_count_data.txt | python mapper.py | sort -k1,1 | python reducer.py
+
+
+
+All the Best For Your Vivas!!!!!

@@ -1,0 +1,23 @@
+List Directories:
+hdfs dfs -ls /
+
+Make Directories:
+hdfs dfs -mkdir /{FOLDER_NAME}  // Replace FOLDER_NAME with your desired name
+
+Make a new File:
+hdfs dfs -touchz /{FILE_NAME}  // Replace FILE_NAME with your desired name
+
+Copy from Local Storage:
+hdfs dfs -copyFromLocal  {LOCAL_FILE_ADDRESS} /
+
+Display a File:
+hdfs dfs -cat /{FILE_NAME}
+
+Copy file from HDFS to Local Storage :
+hdfs dfs -copyToLocal {HADOOP_FILE_ADDRESS} {LOCAL_FILE_ADDRESS}
+
+Move Files in HDFS:
+hdfs dfs -mv {HADOOP_FILE_ADDRESS_1} {HADOOP_FILE_ADDRESS_2}
+
+File Size of Folders:
+hdfs dfs -du /

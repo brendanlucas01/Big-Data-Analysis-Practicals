@@ -1,0 +1,15 @@
+Experiment 5: CRUD Operations in MongoDB
+
+Paste the folder in the PC
+
+open terminal using Ctrl + Alt + T
+
+open commands.txt
+
+run installations first. It may take some time upto 30 min
+
+Then run the rest of the commands.
+
+
+
+All the Best For Your Vivas!!!!!

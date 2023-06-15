@@ -1,0 +1,11 @@
+Experiment 8: Implementation of DGIM Algorithm.
+Paste the folder in the PC
+
+open terminal using Ctrl + Alt + T
+
+cd to the current folder
+
+paste the command:
+python DGIM.py
+
+All the Best For Your Vivas!!!!!

@@ -1,0 +1,15 @@
+Hi There,
+
+Glad you remembered me.
+
+This is the list of experiments for BDA
+Each practical is in a seperate folder with all the code and necessary files.
+inside each folder there is a file named instruction.txt containing all the required info
+
+Exp 3:implement Word Count using Map Reduce.
+Exp 5: CRUD Operations in MongoDB
+Exp 7: implement Matrix Multiplication algorithm using Map Reduce.
+Exp 8: Implementation of DGIM Algorithm.
+Exp 9: implement k-Means algorithm using any programming language.
+
+Best of Luck !!!

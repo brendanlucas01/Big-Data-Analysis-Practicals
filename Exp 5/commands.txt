@@ -1,0 +1,125 @@
+## Commands to install mongodb
+Ps –ef|grep mongo
+Sudo apt-get update
+Sudo apt-get install mongodb
+
+## Start MongoDB
+Sudo service mongod start
+
+
+
+## Commands to create documents using mongodb
+mongo
+
+
+show db
+show collections
+use test
+
+
+
+## Insert()
+db.restaurants.insert(
+{
+"address": {
+"street":"2 Avenue",
+"zipcode":"10075",
+"building":"1480",
+"coord": [ -73.9557413, 40.7720266 ],
+},
+"borough":"Manhattan",
+"cuisine":"Italian",
+"grades": [
+{
+"date":ISODate("2014-10-01T00:00:00Z"),
+"grade":"A",
+"score":11
+},
+{
+"date":ISODate("2014-01-16T00:00:00Z"),
+"grade":"B",
+"score":17
+}
+],
+"name":"Vella",
+"restaurant_id":"41704620"
+}
+)
+
+db.restaurants.insert(
+{
+"address": {
+"street":"Park Avenue",
+"zipcode":"10078",
+"building":"1485",
+"coord": [ -72.9557413, 41.7720266 ],
+},
+"borough":"New Jersey",
+"cuisine":"Chinese",
+"grades": [
+{
+"date":ISODate("2014-10-01T00:00:00Z"),
+"grade":"F",
+"score":7
+},
+{
+"date":ISODate("2014-01-16T00:00:00Z"),
+"grade":"A",
+"score":37
+}
+],
+"name":"Valhalla",
+"restaurant_id":"41704626"
+}
+)
+
+
+
+## db.restaurants.find()
+db.restaurants.find({"borough":"Manhattan"})
+db.restaurants.find({"grades.score":{$gt:30}})
+db.restaurants.find({"grades.score":{$lt:10}})
+
+
+## Logical AND
+db.restaurants.find({"cuisine":"Italian","address.zipcode":"10075"})
+
+
+
+## Logical OR
+db.restaurants.find(
+{$or:[{"cuisine":"Italian"},{"address.zipcode":"10075"}]}
+)
+
+
+## Sort query result
+db.restaurants.find().sort({"borough":1,"address.zipcode":1})
+## Update()
+db.restaurants.update(
+{"name":"Vella"},
+{
+$set:{"cuisine":"American (New)"}
+}
+)
+
+
+## Multiple documents
+db.restaurants.update(
+{"address.zipcode":"10078",cuisine:"Other"},
+{
+$set:{cuisine:"Category To Be Determined"},
+$currentDate:{"lastModified":true}
+},
+{multi:true}
+)
+
+
+## db.restaurants.remove()
+db.restaurants.remove({"borough":"Manhattan"})
+db.restaurants.remove({"borough":"Queens"},{justOne:true})
+db.restaurants.remove({})
+
+
+
+##Drop table
+db.restaurants.drop()
